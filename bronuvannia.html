@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arôme caffee - Бронювання</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Arôme Mars</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span><span></span><span></span>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="https://student.logikaschool.com.ua/project-sandbox/32672">Головна</a></li>
+                <li><a href="https://student.logikaschool.com.ua/project-sandbox/32665">Меню</a></li>
+                <li><a href="https://student.logikaschool.com.ua/project-sandbox/32669">Галерея</a></li>
+                <li><a href="https://student.logikaschool.com.ua/project-sandbox/32662" class="active">Бронювання</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section booking-overlay">
+            
+            <div class="booking-form-container">
+                <h2>Забронювати столик</h2>
+                <p>Зарезервуйте ідеальний час у нашому затишному Марсі</p>
+                
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Ваше повне ім'я</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Дата бронювання</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Бажаний час</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guests">Кількість гостей</label>
+                        <div class="number-input-wrapper">
+                            <button type="button" class="number-btn minus">-</button>
+                            <input type="number" id="guests" name="guests" value="2" min="1" max="10" required>
+                            <button type="button" class="number-btn plus">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Я згоден з правилами та умовами бронювання</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit"><a href="https://student.logikaschool.com.ua/project-sandbox/34476">ПІДТВЕРДИТИ БРОНЮВАННЯ</a></button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Arôme Mars.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
